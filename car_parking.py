@@ -6,10 +6,12 @@ class Car:
     def start_engin(self):
             print(f'THE {self.color}{self.brand} is starting!')
 
-car1 = Car(brand='Toyota', color='red')
-car2 = Car(brand='Honda', color='blue')
+car1 = Car('Toyota',  'red')
+car2 = Car('Honda',  'blue')
+car3 = Car('Ford', 'green')
 
+parking_lot =[car1, car2, car3]
 
-print(car1.brand)
-print(car2.color)
-car1.start_engin()
+for car in parking_lot:
+    car.start_engin()
+
